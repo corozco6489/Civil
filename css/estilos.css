@@ -16,7 +16,7 @@ section {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background: url(https://image.freepik.com/free-photo/front-view-female-builder-with-black-bank-card-her-hands-gray-wall_140725-152104.jpg)no-repeat;
+  background: url("../img/front-view-of-female-builder-with-black-bank-card-in-her-hands-on-gray-wall.jpg")no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
