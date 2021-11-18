@@ -4,10 +4,24 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
-  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.2s linear;
 }
 section {
   padding: 100px 200px;
+}
+
+html{
+  font-size: 62.5%;
+
+  scroll-padding-top: 9rem; 
+  scroll-behavior: smooth;
 }
 
 .main {
@@ -16,7 +30,7 @@ section {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background: url("../img/front-view-of-female-builder-with-black-bank-card-in-her-hands-on-gray-wall.jpg")no-repeat;
+  background: url("https://tec.mx/sites/default/files/styles/header_full/public/2020-10/congreso-construccion.jpg?itok=gSLsDe3U")no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -419,6 +433,52 @@ header.sticky .navegation a:hover {
 .work .content .card .card-img img:hover {
   transform: scale(1.2);
 }
+/*testimonial section*/
+
+.testimonial .content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: cursive;
+  margin-top: 52px; 
+ 
+}
+
+
+.testimonial .content .testimonial-container{
+  width: 500px;
+    height: 100%;
+    background-color:#000016;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,.3);
+    min-width: 400px;
+    padding: 50px 20px;
+    margin: 5px;
+  color: #fff; 
+    position: relative;
+}
+
+.testimonial .content .testimonial-container img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -50px;
+
+
+}
+.testimonial .content .testimonial-container .text{
+  font-size: 20px;
+
+}
+.testimonial .content .testimonial-container .username{
+  font-size: 30px;
+  font-weight: 100;
+}
+
+
 
 /*contactos estilos*/
 
@@ -542,6 +602,9 @@ footer {
 }
 
 @media (max-width: 1040px) {
+  html{
+    font-size: 55%;
+  }
   header {
     padding: 10px 20px;
   }
@@ -632,3 +695,17 @@ footer {
     margin-top: 40px;
   }
 }
+
+
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+  header {
+    padding: 1.5rem 2rem;
+  }
+  
+}
+
+
