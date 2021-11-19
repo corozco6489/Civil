@@ -8,6 +8,8 @@ window.addEventListener("scroll", function () {
 const menuBtn = document.querySelector(".menu-btn");
 const navigation = document.querySelector(".navegation");
 const navigationitems = document.querySelectorAll(".navegation a");
+const animation = document.querySelector(".animated-text")
+
 menuBtn.addEventListener("click", () => {
   menuBtn.classList.toggle("active");
   navigation.classList.toggle("active");
@@ -69,4 +71,26 @@ function sliders(){
   },5000)
 }
 sliders()
+
+
+const careers = ["Civil Engineer", "Plan Designer"]
+ 
+let careerIndex = 0;
+let characterIndex = 0;
+
+updateText();
+function updateText(){
+  characterIndex++;
+  animation.innerHTML=`<h3> ${careers[careerIndex].slice(0,characterIndex)} </h3>` ;
+  if (characterIndex === careers[careerIndex].length){
+    careerIndex++;
+    characterIndex=0;
+  }
+  if (careerIndex === careers.length){
+    careerIndex=0;
+  }
+  setTimeout(updateText, 100);
+
+}
+
 
